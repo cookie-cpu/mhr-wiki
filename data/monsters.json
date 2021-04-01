@@ -1,0 +1,13 @@
+{
+  "name": "Magnamalo",
+  "weaknesses": [
+    "water",
+    "thunder"
+  ],
+  "locations": [
+    "shrine ruins",
+    "frost islands",
+    "lava caverns"
+  ],
+  "images": []
+}

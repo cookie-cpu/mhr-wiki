@@ -1,8 +1,19 @@
-import './App.css';
+import react from 'react'
+import Nav from './Nav'
+import Monster from './Monster'
 
 function App() {
-  return (
-    <div>Hello World</div>
+  return ( <>
+
+    <Nav/>
+
+    <Monster name='Magnamalo' weaknesses='Water' />
+    <Monster name='Zinogre' weaknesses='Fire' />
+
+
+
+
+    </>
   );
 }
 
