@@ -23,6 +23,10 @@ let data = [
 
   {name: "Zinogre", weaknesses: ["fire", "ice"]}, 
 
+  {name: "Nargacuga", weaknesses: ["Thunder", "Fire"]},
+
+  {name: "test", },
+
   {name: "Magnamalo", weaknesses: ["water"], 
   image: 'https://static.wikia.nocookie.net/monsterhunter/images/7/72/MHRise-Magnamalo_Render_001.png/revision/latest?cb=20200917143525'}
 
@@ -40,7 +44,7 @@ export default function MonsterList() {
   })
 
   return (
-    <div>
+    <div style={{border: '2px solid', padding: '1rem', margin: '1rem', display: 'flex'}}>
       
       <h1>Monster List</h1>
       {monsterCards}
