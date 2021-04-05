@@ -15,24 +15,26 @@ function App() {
 
     <Nav/>
 
+    <div style={{border: '2px solid', padding: '1.5rem'}}>
+      <Router>
+        <Switch>
 
-    <Router>
-      <Switch>
+          <Route path="/weapons">
+            <Weapons />
+          </Route>
 
-        <Route path="/weapons">
-          <Weapons />
-        </Route>
+          <Route path="/locations">
+            <Locations />
+          </Route>
+          
+          <Route path="/monsters">
+            <MonsterList />
+          </Route>
 
-        <Route path="/locations">
-          <Locations />
-        </Route>
-        
-        <Route path="/monsters">
-          <MonsterList />
-        </Route>
-
-      </Switch>
-    </Router>
+        </Switch>
+      </Router>
+    </div>
+    
 
 
     </>
