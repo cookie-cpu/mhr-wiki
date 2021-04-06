@@ -10,25 +10,25 @@ import {
 
 export default function Nav() {
   return (
-    <Router>
+   
       <div>
           <nav>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+              <a href="/home">Home</a>
               </li>
               <li>
-                <Link to="/monsters">Monsters</Link>
+              <a href="/monsters">Monsters</a>
               </li>
               <li>
-                <Link to="/weapons">Weapons</Link>
+                <a href="/weapons">Weapons</a>
               </li>
               <li>
-                <Link to="/locations">Locations</Link>
+                <a href="/locations">Locations</a>
               </li>
             </ul>
           </nav>
         </div>
-    </Router>
+    
   )
 }

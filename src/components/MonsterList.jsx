@@ -25,6 +25,10 @@ let data = [
 
   {name: "Nargacuga", weaknesses: ["Thunder", "Fire"]},
 
+  
+
+  
+
   {name: "test", },
 
   {name: "Magnamalo", weaknesses: ["water"], 
@@ -37,19 +41,23 @@ export default function MonsterList() {
   const monsterCards = data.map((monster)=>{
     return (
     <Monster 
+    key={monster.name}
     name={monster.name}
     weaknesses={monster.weaknesses}
     image={monster.image}
     />)
   })
 
-  return (
-    <div style={{border: '2px solid', padding: '1rem', margin: '1rem', display: 'flex'}}>
+  return (<>
+    <h1>Monster List</h1>
+    <div style={{padding: '1rem', margin: '1rem', display: 'flex', flexWrap:'wrap'}}>
       
-      <h1>Monster List</h1>
+      
+
+
       {monsterCards}
        
 
     </div>
-  )
+  </>)
 }

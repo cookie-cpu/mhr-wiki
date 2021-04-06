@@ -9,15 +9,20 @@ import {
 import MonsterList from '../src/components/MonsterList'
 import Locations from '../src/components/Locations'
 import Weapons from '../src/components/Weapons'
+import Home from '../src/components/Home'
 
 function App() {
   return ( <>
 
     <Nav/>
 
-    <div style={{border: '2px solid', padding: '1.5rem'}}>
+    <div style={{border: '5px solid blue', padding: '1.5rem'}}>
       <Router>
         <Switch>
+
+          <Route path="/home">
+            <Home />
+          </Route>
 
           <Route path="/weapons">
             <Weapons />
