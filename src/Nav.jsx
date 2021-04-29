@@ -9,11 +9,20 @@ import {
 
 
 export default function Nav() {
+
+  let navStyle = {
+    backgroundColor: "lightblue",
+    padding: '1rem'
+  }
+  let listStyle = {
+    display: 'flex', 
+    justifyContent: 'space-around',
+  }
+
   return (
-   
       <div>
-          <nav>
-            <ul>
+          <nav style={navStyle}>
+            <ul style={listStyle}>
               <li>
               <a href="/home">Home</a>
               </li>
