@@ -16,4 +16,10 @@ router.route('/add').post((req,res)=> {
     .catch(err => res.status(400).json('Error: ' + err))
 });
 
+router.route('/:id').get((req,res)=> {
+  Monster.findById(req.params.id)
+    .then(monster => res.json(monster))
+    .catch(err => res.status(400).json('Error: ' + err))
+})
+
 module.exports = router;
