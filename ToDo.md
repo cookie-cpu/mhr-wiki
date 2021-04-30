@@ -1,5 +1,7 @@
 # ToDo List for Project
 
+
+# General
 * [] gather official renders of monsters
 * [x] get list of all monsters
 * [x] get list of all Weapons
@@ -7,7 +9,8 @@
 
 # Front End
 * [] Create wireframe
+* [] Add Axios requests to backend
 
 # Back End
-* [] Connect MongoDB cluster
+* [x] Connect MongoDB cluster
 * [] build DB from game data
